@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.default_subspec = "Core"
 
   s.subspec "Core" do |sp|
+    sp.source_files = "Classes/*"
     sp.subspec "Compact" do |ssp|
       ssp.source_files = "Classes/Compact/*"
     end
