@@ -1,0 +1,12 @@
+language: objective-c
+env:
+  global:
+  - LANG=en_US.UTF-8
+  - LC_ALL=en_US.UTF-8
+before_install:
+  - gem install xcpretty
+script:
+  - rake "clean[CollectionUtils.xcworkspace, 'CollectionUtils']"
+  - rake "build[CollectionUtils.xcworkspace, 'CollectionUtils']"
+  - rake "test[CollectionUtils.xcworkspace, 'CollectionUtils']"
+   
