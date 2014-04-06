@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CUCompactArray.h"
 #import "CUCompactDictionary.h"
+#import "CUJSONSerialization.h"
 
 @interface NSObject (CompactCollections)
 

@@ -66,6 +66,22 @@
     XCTAssertEqual([compactDictionary[@"two"] count], 3);
 }
 
+- (void)testNestedDictionaryWithKeyPath
+{
+    NSDictionary *dictionary = @{@"one": @"1",
+                                 @"null": [NSNull null],
+                                 @"two": @{@"one": @"1",
+                                           @"null": [NSNull null],
+                                           @"two": @"2",
+                                           @"three": @"3"},
+                                 @"three": @"3" };
+    NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
+    
+    XCTAssertEqualObjects([compactDictionary valueForKeyPath:@"one"], @"1");
+    XCTAssertEqualObjects([compactDictionary valueForKeyPath:@"two.one"], @"1");
+    XCTAssertEqualObjects([compactDictionary valueForKeyPath:@"two.three"], @"3");
+}
+
 #pragma mark - primitive instance methods
 
 - (void)testCount

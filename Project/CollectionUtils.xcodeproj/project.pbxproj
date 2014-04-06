@@ -128,6 +128,7 @@
 				14985CAA18F1D73F00636E50 /* Products */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 0;
 		};
 		14985CAA18F1D73F00636E50 /* Products */ = {
 			isa = PBXGroup;
@@ -177,8 +178,8 @@
 				14985CD118F1D73F00636E50 /* CollectionUtilsTests.m */,
 				14985CFE18F1D89200636E50 /* CompactCollectionsTests.m */,
 				14985CFF18F1D89200636E50 /* CUCompactArrayTests.m */,
-				14985D0018F1D89200636E50 /* CUCompactDictionaryTests.m */,
 				14985D0218F1D89200636E50 /* CUCompactMutableArrayTests.m */,
+				14985D0018F1D89200636E50 /* CUCompactDictionaryTests.m */,
 				14985D0318F1D89200636E50 /* CUCompactMutableDictionaryTests.m */,
 				14985D0118F1D89200636E50 /* CUCompactJSONSerializationTests.m */,
 				14985CCC18F1D73F00636E50 /* Supporting Files */,
