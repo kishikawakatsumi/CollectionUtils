@@ -12,7 +12,7 @@ Subclasses of NSArray and NSDictionary to recursively remove NSNull objects auto
 
 ### Usage
 
-1. Remove `NSNull` from `NSArray` 
+#### Remove `NSNull` values from an array
 
 ```objc
 NSArray *array = @[@"0", @"1", [NSNull null], @"2", [NSNull null], @"3"];
@@ -20,7 +20,7 @@ NSArray *compactArray = [array cu_compactArray];
 //=> ["0", "1", "2", "3"]
 ```
 
-2. Remove `NSNull` from `NSDictionary` 
+#### Remove `NSNull` values from a dictionary
 
 ```objc
 NSDictionary *dictionary = @{@"one": @"1",
@@ -28,8 +28,10 @@ NSDictionary *dictionary = @{@"one": @"1",
                              @"two": @"2",
                              @"three": @"3"};
 NSDictionary *compactDictionary = [dictionary cu_compactDictionary];
- //=> {"one": "1", "two": "2", "three": "3"]
+ //=> {"one": "1", "two": "2", "three": "3"}
 ```
+
+#### Recursively remove all `NSNull` values by default
 
 ```objc
 NSArray *array = @[@"0",
@@ -42,7 +44,20 @@ NSArray *array = @[@"0",
                      @"three": @"3"},
                    @"4"];
 NSMutableArray *compactArray = [array cu_compactArray];
-//=> ["0", "1", "2", {"one": "1", "two": "2", "three" = "3"}, "4"]
+//=> ["0", "1", "2", {"one": "1", "two": "2", "three": "3"}, "4"]
+```
+
+#### Remove all `NSNull` values from JSON returned from web services.
+
+```objc
+id object = [NSJSONSerialization JSONObjectWithData:data options:opt error:error];
+id result =  [object cu_compactJSONObject];
+```
+
+#### `CUJSONSerialization` is a convienience class to remove `NSNull` values from JSON
+
+```objc
+id result = [CUJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
 ```
 
 ## Requirements
