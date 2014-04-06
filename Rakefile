@@ -1,7 +1,4 @@
-DESTINATIONS = ["name=iPhone,OS=6.1",
-                "name=iPhone Retina (3.5-inch),OS=6.1",
-                "name=iPhone Retina (3.5-inch),OS=7.0",
-                "name=iPhone Retina (4-inch),OS=6.1",
+DESTINATIONS = ["name=iPhone Retina (3.5-inch),OS=7.0",
                 "name=iPhone Retina (4-inch),OS=7.0",
                 "name=iPhone Retina (4-inch 64-bit),OS=7.0"]
 
