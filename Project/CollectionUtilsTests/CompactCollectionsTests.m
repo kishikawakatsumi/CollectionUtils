@@ -40,8 +40,8 @@
                        @"4"];
     NSArray *compactArray = [array cu_compactArray];
     
-    XCTAssertEqual(compactArray.count, 5);
-    XCTAssertEqual([compactArray[3] count], 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)5);
+    XCTAssertEqual([compactArray[3] count], (NSUInteger)3);
 }
 
 - (void)testNestedDictionaryInMutableArray
@@ -57,8 +57,8 @@
                        @"4"];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 5);
-    XCTAssertEqual([compactArray[3] count], 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)5);
+    XCTAssertEqual([compactArray[3] count], (NSUInteger)3);
 }
 
 #pragma mark -
@@ -75,8 +75,8 @@
                                  @"two": @"2"};
     NSDictionary *compactDictionary = [dictionary cu_compactDictionary];
     
-    XCTAssertEqual(compactDictionary.count, 3);
-    XCTAssertEqual([compactDictionary[@"one"] count], 4);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
+    XCTAssertEqual([compactDictionary[@"one"] count], (NSUInteger)4);
 }
 
 - (void)testNestedArrayInMutableDictionary
@@ -91,8 +91,8 @@
                                  @"two": @"2"};
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
-    XCTAssertEqual([compactDictionary[@"one"] count], 4);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
+    XCTAssertEqual([compactDictionary[@"one"] count], (NSUInteger)4);
 }
 
 @end

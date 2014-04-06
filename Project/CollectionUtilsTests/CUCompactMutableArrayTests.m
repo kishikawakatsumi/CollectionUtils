@@ -49,7 +49,7 @@
     NSMutableArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
 }
 
 - (void)testNestedArray
@@ -66,8 +66,8 @@
                        @"4"];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 5);
-    XCTAssertEqual([compactArray[3] count], 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)5);
+    XCTAssertEqual([compactArray[3] count], (NSUInteger)3);
 }
 
 #pragma mark - primitive instance methods
@@ -77,7 +77,7 @@
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
 }
 
 - (void)testObjectAtIndex
@@ -178,18 +178,18 @@
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual([compactArray indexOfObject:@"0"], 0);
-    XCTAssertEqual([compactArray indexOfObject:@"1"], 1);
-    XCTAssertEqual([compactArray indexOfObject:@"2"], 2);
-    XCTAssertEqual([compactArray indexOfObject:@"3"], 3);
-    XCTAssertEqual([compactArray indexOfObject:@"4"], NSNotFound);
-    XCTAssertEqual([compactArray indexOfObject:[NSNull null]], NSNotFound);
-    XCTAssertEqual([compactArray indexOfObject:nil], NSNotFound);
+    XCTAssertEqual([compactArray indexOfObject:@"0"], (NSUInteger)0);
+    XCTAssertEqual([compactArray indexOfObject:@"1"], (NSUInteger)1);
+    XCTAssertEqual([compactArray indexOfObject:@"2"], (NSUInteger)2);
+    XCTAssertEqual([compactArray indexOfObject:@"3"], (NSUInteger)3);
+    XCTAssertEqual([compactArray indexOfObject:@"4"], (NSUInteger)NSNotFound);
+    XCTAssertEqual([compactArray indexOfObject:[NSNull null]], (NSUInteger)NSNotFound);
+    XCTAssertEqual([compactArray indexOfObject:nil], (NSUInteger)NSNotFound);
     
-    XCTAssertEqual([compactArray indexOfObject:@"0" inRange:NSMakeRange(0, 3)], 0);
-    XCTAssertEqual([compactArray indexOfObject:@"1" inRange:NSMakeRange(0, 3)], 1);
-    XCTAssertEqual([compactArray indexOfObject:@"2" inRange:NSMakeRange(0, 3)], 2);
-    XCTAssertEqual([compactArray indexOfObject:@"3" inRange:NSMakeRange(0, 3)], NSNotFound);
+    XCTAssertEqual([compactArray indexOfObject:@"0" inRange:NSMakeRange(0, 3)], (NSUInteger)0);
+    XCTAssertEqual([compactArray indexOfObject:@"1" inRange:NSMakeRange(0, 3)], (NSUInteger)1);
+    XCTAssertEqual([compactArray indexOfObject:@"2" inRange:NSMakeRange(0, 3)], (NSUInteger)2);
+    XCTAssertEqual([compactArray indexOfObject:@"3" inRange:NSMakeRange(0, 3)], (NSUInteger)NSNotFound);
 }
 
 - (void)testIndexOfObjectIdenticalTo
@@ -197,16 +197,16 @@
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"0"], 0);
-    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"1"], 1);
-    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"2"], 2);
-    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"3"], 3);
-    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"4"], NSNotFound);
+    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"0"], (NSUInteger)0);
+    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"1"], (NSUInteger)1);
+    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"2"], (NSUInteger)2);
+    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"3"], (NSUInteger)3);
+    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"4"], (NSUInteger)NSNotFound);
     
-    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"0" inRange:NSMakeRange(0, 3)], 0);
-    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"1" inRange:NSMakeRange(0, 3)], 1);
-    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"2" inRange:NSMakeRange(0, 3)], 2);
-    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"3" inRange:NSMakeRange(0, 3)], NSNotFound);
+    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"0" inRange:NSMakeRange(0, 3)], (NSUInteger)0);
+    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"1" inRange:NSMakeRange(0, 3)], (NSUInteger)1);
+    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"2" inRange:NSMakeRange(0, 3)], (NSUInteger)2);
+    XCTAssertEqual([compactArray indexOfObjectIdenticalTo:@"3" inRange:NSMakeRange(0, 3)], (NSUInteger)NSNotFound);
 }
 
 - (void)testIsEqualToArray
@@ -467,14 +467,14 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
         return [str isEqualToString:@"2"];
     }];
     
-    XCTAssertEqual(index, 2);
+    XCTAssertEqual(index, (NSUInteger)2);
     
     index = [compactArray indexOfObjectWithOptions:NSEnumerationConcurrent | NSEnumerationReverse passingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
         NSString *str = obj;
         return [str isEqualToString:@"2"];
     }];
     
-    XCTAssertEqual(index, 2);
+    XCTAssertEqual(index, (NSUInteger)2);
     
     NSMutableIndexSet *indexSet = [NSMutableIndexSet indexSet];
     [indexSet addIndex:0];
@@ -486,7 +486,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
         return [str isEqualToString:@"2"];
     }];
     
-    XCTAssertEqual(index, 2);
+    XCTAssertEqual(index, (NSUInteger)2);
 }
 
 - (void)testIndexesOfObjectsPassingTest
@@ -578,7 +578,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
         return [str1 compare:str2];
     }];
     
-    XCTAssertEqual(index, 3);
+    XCTAssertEqual(index, (NSUInteger)3);
 }
 
 #pragma mark - NSCopying
@@ -665,27 +665,27 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray.lastObject, @"3");
     
     [compactArray removeLastObject];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray.lastObject, @"2");
     
     [compactArray removeLastObject];
     
-    XCTAssertEqual(compactArray.count, 2);
+    XCTAssertEqual(compactArray.count, (NSUInteger)2);
     XCTAssertEqualObjects(compactArray.lastObject, @"1");
     
     [compactArray removeLastObject];
     
-    XCTAssertEqual(compactArray.count, 1);
+    XCTAssertEqual(compactArray.count, (NSUInteger)1);
     XCTAssertEqualObjects(compactArray.lastObject, @"0");
     
     [compactArray removeLastObject];
     
-    XCTAssertEqual(compactArray.count, 0);
+    XCTAssertEqual(compactArray.count, (NSUInteger)0);
 }
 
 - (void)testRemoveObjectAtIndex
@@ -693,7 +693,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -701,14 +701,14 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray removeObjectAtIndex:1];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"2");
     XCTAssertEqualObjects(compactArray[2], @"3");
     
     [compactArray removeObjectAtIndex:1];
     
-    XCTAssertEqual(compactArray.count, 2);
+    XCTAssertEqual(compactArray.count, (NSUInteger)2);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"3");
 }
@@ -718,7 +718,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -726,7 +726,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray replaceObjectAtIndex:1 withObject:@"4"];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"4");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -734,7 +734,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray replaceObjectAtIndex:2 withObject:@"5"];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"4");
     XCTAssertEqualObjects(compactArray[2], @"5");
@@ -742,14 +742,14 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray replaceObjectAtIndex:2 withObject:nil];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"4");
     XCTAssertEqualObjects(compactArray[2], @"3");
     
     [compactArray replaceObjectAtIndex:1 withObject:[NSNull null]];
     
-    XCTAssertEqual(compactArray.count, 2);
+    XCTAssertEqual(compactArray.count, (NSUInteger)2);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"3");
 }
@@ -759,7 +759,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -767,7 +767,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray addObjectsFromArray:array.copy];
     
-    XCTAssertEqual(compactArray.count, 8);
+    XCTAssertEqual(compactArray.count, (NSUInteger)8);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -783,7 +783,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -791,7 +791,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray exchangeObjectAtIndex:1 withObjectAtIndex:2];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"2");
     XCTAssertEqualObjects(compactArray[2], @"1");
@@ -803,11 +803,11 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     
     [compactArray removeAllObjects];
     
-    XCTAssertEqual(compactArray.count, 0);
+    XCTAssertEqual(compactArray.count, (NSUInteger)0);
 }
 
 - (void)testRemoveObjectInRange
@@ -815,7 +815,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -823,21 +823,21 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray removeObject:@"2" inRange:NSMakeRange(1, 2)];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
     
     [compactArray removeObject:nil inRange:NSMakeRange(1, 2)];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
     
     [compactArray removeObject:[NSNull null] inRange:NSMakeRange(1, 2)];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
@@ -848,7 +848,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -856,21 +856,21 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray removeObject:@"2"];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
     
     [compactArray removeObject:nil];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
     
     [compactArray removeObject:[NSNull null]];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
@@ -881,7 +881,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -889,21 +889,21 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray removeObjectIdenticalTo:@"2"];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
     
     [compactArray removeObjectIdenticalTo:nil];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
     
     [compactArray removeObjectIdenticalTo:[NSNull null]];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
@@ -914,7 +914,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -922,21 +922,21 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray removeObjectIdenticalTo:@"2" inRange:NSMakeRange(1, 2)];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
     
     [compactArray removeObjectIdenticalTo:nil inRange:NSMakeRange(1, 2)];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
     
     [compactArray removeObjectIdenticalTo:[NSNull null] inRange:NSMakeRange(1, 2)];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"3");
@@ -947,7 +947,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -959,7 +959,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray removeObjectsFromIndices:indices numIndices:2];
     
-    XCTAssertEqual(compactArray.count, 2);
+    XCTAssertEqual(compactArray.count, (NSUInteger)2);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"3");
 }
@@ -969,7 +969,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -977,7 +977,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray removeObjectsInArray:@[@"0", @"2", [NSNull null]]];
     
-    XCTAssertEqual(compactArray.count, 2);
+    XCTAssertEqual(compactArray.count, (NSUInteger)2);
     XCTAssertEqualObjects(compactArray[0], @"1");
     XCTAssertEqualObjects(compactArray[1], @"3");
 }
@@ -987,7 +987,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -995,7 +995,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray removeObjectsInRange:NSMakeRange(1, 2)];
     
-    XCTAssertEqual(compactArray.count, 2);
+    XCTAssertEqual(compactArray.count, (NSUInteger)2);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"3");
 }
@@ -1005,7 +1005,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -1013,7 +1013,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray replaceObjectsInRange:NSMakeRange(1, 2) withObjectsFromArray:@[@"4", [NSNull null], @"5", @"6", @"7"]];
     
-    XCTAssertEqual(compactArray.count, 6);
+    XCTAssertEqual(compactArray.count, (NSUInteger)6);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"4");
     XCTAssertEqualObjects(compactArray[2], @"5");
@@ -1027,7 +1027,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -1035,7 +1035,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray replaceObjectsInRange:NSMakeRange(1, 2) withObjectsFromArray:@[@"4", [NSNull null], @"5", @"6", @"7"] range:NSMakeRange(0, 3)];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"4");
     XCTAssertEqualObjects(compactArray[2], @"5");
@@ -1047,7 +1047,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -1055,7 +1055,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray setArray:@[@"4", [NSNull null], @"5", @"6"]];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"4");
     XCTAssertEqualObjects(compactArray[1], @"5");
     XCTAssertEqualObjects(compactArray[2], @"6");
@@ -1100,7 +1100,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray insertObjects:newAdditions atIndexes:indexes];
     
-    XCTAssertEqual(compactArray.count, 6);
+    XCTAssertEqual(compactArray.count, (NSUInteger)6);
     XCTAssertEqualObjects(compactArray[0], @"one");
     XCTAssertEqualObjects(compactArray[1], @"a");
     XCTAssertEqualObjects(compactArray[2], @"two");
@@ -1124,7 +1124,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray insertObjects:newAdditions atIndexes:indexes];
     
-    XCTAssertEqual(compactArray.count, 6);
+    XCTAssertEqual(compactArray.count, (NSUInteger)6);
     XCTAssertEqualObjects(compactArray[0], @"one");
     XCTAssertEqualObjects(compactArray[1], @"a");
     XCTAssertEqualObjects(compactArray[2], @"two");
@@ -1146,7 +1146,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray insertObjects:newAdditions atIndexes:indexes];
     
-    XCTAssertEqual(compactArray.count, 6);
+    XCTAssertEqual(compactArray.count, (NSUInteger)6);
     XCTAssertEqualObjects(compactArray[0], @"one");
     XCTAssertEqualObjects(compactArray[1], @"two");
     XCTAssertEqualObjects(compactArray[2], @"three");
@@ -1170,7 +1170,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray insertObjects:newAdditions atIndexes:indexes];
     
-    XCTAssertEqual(compactArray.count, 6);
+    XCTAssertEqual(compactArray.count, (NSUInteger)6);
     XCTAssertEqualObjects(compactArray[0], @"one");
     XCTAssertEqualObjects(compactArray[1], @"two");
     XCTAssertEqualObjects(compactArray[2], @"three");
@@ -1193,7 +1193,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray insertObjects:newAdditions atIndexes:indexes];
     
-    XCTAssertEqual(compactArray.count, 7);
+    XCTAssertEqual(compactArray.count, (NSUInteger)7);
     XCTAssertEqualObjects(compactArray[0], @"one");
     XCTAssertEqualObjects(compactArray[1], @"a");
     XCTAssertEqualObjects(compactArray[2], @"b");
@@ -1218,7 +1218,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray insertObjects:newAdditions atIndexes:indexes];
     
-    XCTAssertEqual(compactArray.count, 7);
+    XCTAssertEqual(compactArray.count, (NSUInteger)7);
     XCTAssertEqualObjects(compactArray[0], @"one");
     XCTAssertEqualObjects(compactArray[1], @"a");
     XCTAssertEqualObjects(compactArray[2], @"b");
@@ -1233,7 +1233,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -1245,7 +1245,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray removeObjectsAtIndexes:indexes];
     
-    XCTAssertEqual(compactArray.count, 2);
+    XCTAssertEqual(compactArray.count, (NSUInteger)2);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"2");
 }
@@ -1255,7 +1255,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -1268,7 +1268,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     [compactArray replaceObjectsAtIndexes:indexes withObjects:@[@"a", [NSNull null], @"b"]];
     
-    XCTAssertEqual(compactArray.count, 3);
+    XCTAssertEqual(compactArray.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"a");
     XCTAssertEqualObjects(compactArray[2], @"b");
@@ -1280,7 +1280,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSArray *array = [self sampleArray];
     NSMutableArray *compactArray = [[array cu_compactArray] mutableCopy];
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"2");
@@ -1288,7 +1288,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     
     compactArray[2] = @"two";
     
-    XCTAssertEqual(compactArray.count, 4);
+    XCTAssertEqual(compactArray.count, (NSUInteger)4);
     XCTAssertEqualObjects(compactArray[0], @"0");
     XCTAssertEqualObjects(compactArray[1], @"1");
     XCTAssertEqualObjects(compactArray[2], @"two");

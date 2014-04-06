@@ -43,8 +43,8 @@
     
     id object = [CUJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     
-    XCTAssertEqual([object count], 5);
-    XCTAssertEqual([object[3] count], 3);
+    XCTAssertEqual([object count], (NSUInteger)5);
+    XCTAssertEqual([object[3] count], (NSUInteger)3);
 }
 
 #pragma mark -
@@ -63,8 +63,8 @@
     
     id object = [CUJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     
-    XCTAssertEqual([object count], 3);
-    XCTAssertEqual([object[@"one"] count], 4);
+    XCTAssertEqual([object count], (NSUInteger)3);
+    XCTAssertEqual([object[@"one"] count], (NSUInteger)4);
 }
 
 @end

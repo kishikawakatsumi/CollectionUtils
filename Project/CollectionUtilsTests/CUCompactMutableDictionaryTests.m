@@ -45,7 +45,7 @@
     NSDictionary *dictionary = [self sampleDictionary];
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"2");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
@@ -62,7 +62,7 @@
                                  @"three": @"3" };
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqual([compactDictionary[@"two"] count], 3);
 }
 
@@ -89,7 +89,7 @@
     NSDictionary *dictionary = [self sampleDictionary];
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
 }
 
 - (void)testObjectForKey
@@ -366,21 +366,21 @@
     NSDictionary *dictionary = [self sampleDictionary];
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"2");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
     
     [compactDictionary removeObjectForKey:@"two"];
     
-    XCTAssertEqual(compactDictionary.count, 2);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)2);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertNil(compactDictionary[@"two"]);
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
     
     [compactDictionary removeObjectForKey:@"three"];
     
-    XCTAssertEqual(compactDictionary.count, 1);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)1);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertNil(compactDictionary[@"two"]);
     XCTAssertNil(compactDictionary[@"three"]);
@@ -391,28 +391,28 @@
     NSDictionary *dictionary = [self sampleDictionary];
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"2");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
     
     [compactDictionary setObject:@"replaced" forKey:@"two"];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"replaced");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
     
     [compactDictionary setObject:[NSNull null] forKey:@"two"];
     
-    XCTAssertEqual(compactDictionary.count, 2);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)2);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertNil(compactDictionary[@"two"]);
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
     
     [compactDictionary setObject:nil forKey:@"three"];
     
-    XCTAssertEqual(compactDictionary.count, 1);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)1);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertNil(compactDictionary[@"two"]);
     XCTAssertNil(compactDictionary[@"three"]);
@@ -425,14 +425,14 @@
     NSDictionary *dictionary = [self sampleDictionary];
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"2");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
     
     [compactDictionary addEntriesFromDictionary:@{@"four": @"4", @"five": @"5", @"six": [NSNull null]}];
     
-    XCTAssertEqual(compactDictionary.count, 5);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)5);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"2");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
@@ -446,14 +446,14 @@
     NSDictionary *dictionary = [self sampleDictionary];
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"2");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
     
     [compactDictionary removeAllObjects];
     
-    XCTAssertEqual(compactDictionary.count, 0);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)0);
     XCTAssertNil(compactDictionary[@"one"]);
     XCTAssertNil(compactDictionary[@"two"]);
     XCTAssertNil(compactDictionary[@"three"]);
@@ -464,14 +464,14 @@
     NSDictionary *dictionary = [self sampleDictionary];
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"2");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
     
     [compactDictionary removeObjectsForKeys:@[@"two", @"three"]];
     
-    XCTAssertEqual(compactDictionary.count, 1);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)1);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertNil(compactDictionary[@"two"]);
     XCTAssertNil(compactDictionary[@"three"]);
@@ -482,14 +482,14 @@
     NSDictionary *dictionary = [self sampleDictionary];
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"2");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
     
     [compactDictionary setDictionary:@{@"four": @"4", @"five": @"5", @"six": [NSNull null]}];
     
-    XCTAssertEqual(compactDictionary.count, 2);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)2);
     XCTAssertNil(compactDictionary[@"one"]);
     XCTAssertNil(compactDictionary[@"two"]);
     XCTAssertNil(compactDictionary[@"three"]);
@@ -503,14 +503,14 @@
     NSDictionary *dictionary = [self sampleDictionary];
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"2");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
     
     compactDictionary[@"two"] = @"replaced";
     
-    XCTAssertEqual(compactDictionary.count, 3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
     XCTAssertEqualObjects(compactDictionary[@"one"], @"1");
     XCTAssertEqualObjects(compactDictionary[@"two"], @"replaced");
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
