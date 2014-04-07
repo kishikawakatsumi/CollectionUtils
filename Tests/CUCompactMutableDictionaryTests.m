@@ -516,4 +516,22 @@
     XCTAssertEqualObjects(compactDictionary[@"three"], @"3");
 }
 
+- (void)testReplaceValueToNestedDictionary
+{
+    NSDictionary *dictionary = @{@"one": @"1",
+                                 @"null": [NSNull null],
+                                 @"two": @{@"one": @"1",
+                                           @"null": [NSNull null],
+                                           @"two": @"2",
+                                           @"three": @"3"},
+                                 @"three": @"3" };
+    
+    NSMutableDictionary *mutableDictionary = [dictionary mutableCopy];
+    NSMutableDictionary *compactMutableDictionary = [mutableDictionary cu_compactDictionary];
+    
+    NSString *replace = @"replaced";
+    compactMutableDictionary[@"two"][@"three"] = replace;
+    XCTAssertEqualObjects(compactMutableDictionary[@"two"][@"three"], replace);
+}
+
 @end

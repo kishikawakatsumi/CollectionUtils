@@ -1329,7 +1329,7 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     XCTAssertEqualObjects(compactArray[3], @"3");
 }
 
-- (void)testReplaceNestedArray
+- (void)testReplaceValueToNestedArray
 {
     NSArray *array = @[@"0",
                        @"1",
@@ -1345,9 +1345,9 @@ static NSComparisonResult stringSort(id str1, id str2, void *context)
     NSMutableArray *mutableArray = [array mutableCopy];
     NSMutableArray *compactMutableArray = [mutableArray cu_compactArray];
     
-    NSString *test = @"test";
-    compactMutableArray[3][1] = test;
-    XCTAssertEqualObjects(compactMutableArray[3][1], test);
+    NSString *replace = @"replaced";
+    compactMutableArray[3][1] = replace;
+    XCTAssertEqualObjects(compactMutableArray[3][1], replace);
 }
 
 @end

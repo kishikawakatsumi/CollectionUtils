@@ -148,10 +148,14 @@
         return object;
     }
     if ([object isKindOfClass:[NSArray class]]) {
-        return [[CUCompactArray alloc] initWithArray:object];
+        NSMutableArray *array = [CUCompactMutableArray arrayWithArray:object];
+        [self.original setObject:array forKey:aKey];
+        return array;
     }
     if ([object isKindOfClass:[NSDictionary class]]) {
-        return [[CUCompactDictionary alloc] initWithDictionary:object];
+        NSMutableDictionary *dictionary = [CUCompactMutableDictionary dictionaryWithDictionary:object];
+        [self.original setObject:dictionary forKey:aKey];
+        return dictionary;
     }
     return object;
 }
