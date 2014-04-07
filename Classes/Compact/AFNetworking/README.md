@@ -2,7 +2,7 @@ CollectionUtils/AFNetworking
 ===============
 
 #### CollectionUtils [AFNetworking](https://github.com/AFNetworking/AFNetworking) Additions
-#### `CUJSONResponseSerializer` (for AFNetworking 2.x)
+#### CUJSONResponseSerializer (for AFNetworking 2.x)
 
 ```objc
 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -15,7 +15,7 @@ manager.responseSerializer = [CUJSONResponseSerializer serializer];
 }];
 ```
 
-#### `CUJSONRequestOperation` (for AFNetworking 1.x)
+#### CUJSONRequestOperation (for AFNetworking 1.x)
 
 ```objc
 NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com/resources.json"]];

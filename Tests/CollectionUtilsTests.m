@@ -1,19 +1,19 @@
 //
-//  CompactCollectionsTests.m
+//  CollectionUtilsTests.m
 //  CollectionUtils
 //
-//  Created by kishikawa katsumi on 2014/04/06.
+//  Created by kishikawa katsumi on 2014/04/07.
 //  Copyright (c) 2014 kishikawa katsumi. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import "Compact.h"
 
-@interface CompactCollectionsTests : XCTestCase
+@interface CollectionUtilsTests : XCTestCase
 
 @end
 
-@implementation CompactCollectionsTests
+@implementation CollectionUtilsTests
 
 - (void)setUp
 {

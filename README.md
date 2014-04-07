@@ -8,12 +8,12 @@
 Useful utilities for Objective-C collection classes. 
 
 ## CollectionUtils/Compact
-Subclasses of NSArray and NSDictionary to recursively remove NSNull values automatically with little performance penalty.  
+Subclasses of NSArray and NSDictionary to recursively remove all NSNull values automatically with little performance penalty.  
 It is useful for JSON returned from web services.
 
 ### Usage
 
-#### Remove `NSNull` values from an array
+#### Remove NSNull values from an array
 
 ```objc
 NSArray *array = @[@"0", @"1", [NSNull null], @"2", [NSNull null], @"3"];
@@ -21,7 +21,7 @@ NSArray *compactArray = [array cu_compactArray];
 //=> ["0", "1", "2", "3"]
 ```
 
-#### Remove `NSNull` values from a dictionary
+#### Remove NSNull values from a dictionary
 
 ```objc
 NSDictionary *dictionary = @{@"one": @"1",
@@ -32,7 +32,7 @@ NSDictionary *compactDictionary = [dictionary cu_compactDictionary];
  //=> {"one": "1", "two": "2", "three": "3"}
 ```
 
-#### Recursively remove all `NSNull` values by default
+#### Recursively remove all NSNull values by default
 
 ```objc
 NSArray *array = @[@"0",
@@ -48,21 +48,21 @@ NSMutableArray *compactArray = [array cu_compactArray];
 //=> ["0", "1", "2", {"one": "1", "two": "2", "three": "3"}, "4"]
 ```
 
-#### Remove all `NSNull` values from JSON returned from web services.
+#### Remove all NSNull values from JSON returned from web services.
 
 ```objc
 id object = [NSJSONSerialization JSONObjectWithData:data options:opt error:error];
 id result =  [object cu_compactJSONObject];
 ```
 
-#### `CUJSONSerialization` is a convienience class to remove `NSNull` values from JSON
+#### CUJSONSerialization is a convienience class to remove all NSNull values from JSON data
 
 ```objc
 id result = [CUJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
 ```
 
 #### [AFNetworking](https://github.com/AFNetworking/AFNetworking) Additions
-#### `CUJSONResponseSerializer` (for AFNetworking 2.x)
+#### CUJSONResponseSerializer (for AFNetworking 2.x)
 
 ```objc
 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -75,7 +75,7 @@ manager.responseSerializer = [CUJSONResponseSerializer serializer];
 }];
 ```
 
-#### `CUJSONRequestOperation` (for AFNetworking 1.x)
+#### CUJSONRequestOperation (for AFNetworking 1.x)
 
 ```objc
 NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com/resources.json"]];
