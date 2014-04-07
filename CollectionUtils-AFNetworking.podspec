@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name                  = "CollectionUtils"
+  s.name                  = "CollectionUtils-AFNetworking"
   s.version               = "1.0.0"
-  s.summary               = "Subclasses of NSArray and NSDictionary to recursively all remove NSNull values with little performance penalty."
+  s.summary               = "CollectionUtils additions for AFNetworking."
   s.description           = <<-DESC
                               Subclasses of NSArray and NSDictionary to recursively remove all NSNull values automatically with little performance penalty.
                               It is useful for JSON returned from web services.
@@ -12,14 +12,12 @@ Pod::Spec.new do |s|
   s.author                = { "kishikawa katsumi" => "kishikawakatsumi@mac.com" }
   s.source                = { :git => "https://github.com/kishikawakatsumi/CollectionUtils.git", :tag => "v#{s.version.to_s}" }
 
-  s.ios.deployment_target = "4.3"
-  s.osx.deployment_target = "10.6"
+  s.ios.deployment_target = "6.0"
+  s.osx.deployment_target = "10.8"
   
   s.requires_arc          = true
-  s.source_files          = "Classes/*.{h,m}"
+  sp.source_files         = "Classes/Compact/AFNetworking/*.{h,m}"
 
-  s.subspec "Compact" do |ss|
-    ss.requires_arc = true
-    ss.source_files = "Classes/Compact/*.{h,m}"
-  end
+  sp.dependency "CollectionUtils"
+  sp.dependency "AFNetworking", "~> 2.0"
 end
