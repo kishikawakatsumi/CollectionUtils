@@ -62,8 +62,8 @@
                                  @"three": @"3" };
     NSDictionary *compactDictionary = [dictionary cu_compactDictionary];
     
-    XCTAssertEqual((NSUInteger)compactDictionary.count, (NSUInteger)3);
-    XCTAssertEqual((NSUInteger)[compactDictionary[@"two"] count], (NSUInteger)3);
+    XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
+    XCTAssertEqual([compactDictionary[@"two"] count], (NSUInteger)3);
 }
 
 - (void)testNestedDictionaryWithKeyPath
