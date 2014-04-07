@@ -63,7 +63,7 @@
     NSMutableDictionary *compactDictionary = [[dictionary cu_compactDictionary] mutableCopy];
     
     XCTAssertEqual(compactDictionary.count, (NSUInteger)3);
-    XCTAssertEqual([compactDictionary[@"two"] count], 3);
+    XCTAssertEqual([compactDictionary[@"two"] count], (NSUInteger)3);
 }
 
 - (void)testNestedDictionaryWithKeyPath
