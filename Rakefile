@@ -56,7 +56,7 @@ task :test, :workspace, :schemes do |t, args|
         destination: "#{destination}"
       }
       options = join_option(options: options, prefix: "-", seperator: " ")
-      sh "xcodebuild test #{options} | xcpretty -c; exit ${PIPESTATUS[0]}"
+      sh "xcodebuild test #{options} | xcpretty -tc; exit ${PIPESTATUS[0]}"
     end
   end
 end
