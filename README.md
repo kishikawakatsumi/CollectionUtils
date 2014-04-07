@@ -64,6 +64,12 @@ id result = [CUJSONSerialization JSONObjectWithData:data options:kNilOptions err
 #### [AFNetworking](https://github.com/AFNetworking/AFNetworking) Additions
 #### CUJSONResponseSerializer (for AFNetworking 2.x)
 
+#### Install
+
+    pod "CollectionUtils-AFNetworking"
+
+#### Usage
+
 ```objc
 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 manager.responseSerializer = [CUJSONResponseSerializer serializer];
@@ -76,6 +82,12 @@ manager.responseSerializer = [CUJSONResponseSerializer serializer];
 ```
 
 #### CUJSONRequestOperation (for AFNetworking 1.x)
+
+#### Install
+
+    pod "CollectionUtils-AFNetworking-1.3"
+
+#### Usage
 
 ```objc
 NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com/resources.json"]];
@@ -120,11 +132,11 @@ it simply add the following line to your Podfile:
 If you want to use [AFNetworking](https://github.com/AFNetworking/AFNetworking) additions,
 add the following line:
 
-    pod "CollectionUtils/AFNetworking"
+    pod "CollectionUtils-AFNetworking"
 
 if you use older version AFNetworking,
 
-    pod "CollectionUtils/AFNetworking-1.x"
+    pod "CollectionUtils-AFNetworking-1.3"
 
 ## Author
 
