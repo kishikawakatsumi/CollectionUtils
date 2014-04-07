@@ -8,7 +8,8 @@
 Useful utilities for Objective-C collection classes. 
 
 ## CollectionUtils/Compact
-Subclasses of NSArray and NSDictionary to recursively remove NSNull objects automatically with little performance penalty. It is useful for JSON returned from web services.
+Subclasses of NSArray and NSDictionary to recursively remove NSNull objects automatically with little performance penalty.  
+It is useful for JSON returned from web services.
 
 ### Usage
 
@@ -102,7 +103,7 @@ AFHTTPClient *client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"ht
 #### How it works
 `CUCompactArray` and `CUCompactDictionary` just wrap the original array/dictionary to behave as if do not have `NSNull` values.
 
-To remove `NSNull` values for the nested collection is delayed until the nested array/dictionary is really accessed.
+To remove `NSNull` values for the nested collection is delayed until the nested array/dictionary is really accessed.  
 It is performed only for one level at a time.
 
 ```objc
