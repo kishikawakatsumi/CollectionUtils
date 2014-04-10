@@ -75,8 +75,8 @@
     if (!anObject || anObject == [NSNull null]) {
         return self;
     }
-    [self.original addObject:anObject];
-    return [CUCompactArray arrayWithArray:self.original];
+    
+    return [CUCompactArray arrayWithArray:[self.original arrayByAddingObject:anObject]];
 }
 
 - (BOOL)isEqualToArray:(NSArray *)otherArray
@@ -206,8 +206,8 @@
     if (!anObject || anObject == [NSNull null]) {
         return self;
     }
-    [self.original addObject:anObject];
-    return [CUCompactMutableArray arrayWithArray:self.original];
+    
+    return [CUCompactMutableArray arrayWithArray:[self.original arrayByAddingObject:anObject]];
 }
 
 - (BOOL)isEqualToArray:(NSArray *)otherArray

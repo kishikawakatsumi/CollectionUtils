@@ -107,6 +107,10 @@
     XCTAssertEqualObjects([compactArray objectAtIndex:2], @"2");
     XCTAssertEqualObjects([compactArray objectAtIndex:3], @"3");
     XCTAssertEqualObjects([compactArray objectAtIndex:4], @"4");
+    
+    NSArray *copyOfCompactArray = [compactArray copy];
+    [compactArray arrayByAddingObject:@"5"];
+    XCTAssertEqualObjects(copyOfCompactArray, compactArray, @"`-arrayByAddingObject:` should not modify receiver.");
 }
 
 - (void)testArrayByAddingObjectsFromArray
