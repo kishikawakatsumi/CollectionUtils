@@ -17,7 +17,7 @@
                BlueprintIdentifier = "14985CA818F1D73F00636E50"
                BuildableName = "CollectionUtils.app"
                BlueprintName = "CollectionUtils"
-               ReferencedContainer = "container:../../../../Dropbox/Xcode Projects/CollectionUtils/Project/CollectionUtils.xcodeproj">
+               ReferencedContainer = "container:CollectionUtils.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "14985CC318F1D73F00636E50"
                BuildableName = "CollectionUtilsTests.xctest"
                BlueprintName = "CollectionUtilsTests"
-               ReferencedContainer = "container:../../../../Dropbox/Xcode Projects/CollectionUtils/Project/CollectionUtils.xcodeproj">
+               ReferencedContainer = "container:CollectionUtils.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "14985CA818F1D73F00636E50"
             BuildableName = "CollectionUtils.app"
             BlueprintName = "CollectionUtils"
-            ReferencedContainer = "container:../../../../Dropbox/Xcode Projects/CollectionUtils/Project/CollectionUtils.xcodeproj">
+            ReferencedContainer = "container:CollectionUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "14985CA818F1D73F00636E50"
             BuildableName = "CollectionUtils.app"
             BlueprintName = "CollectionUtils"
-            ReferencedContainer = "container:../../../../Dropbox/Xcode Projects/CollectionUtils/Project/CollectionUtils.xcodeproj">
+            ReferencedContainer = "container:CollectionUtils.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "14985CA818F1D73F00636E50"
             BuildableName = "CollectionUtils.app"
             BlueprintName = "CollectionUtils"
-            ReferencedContainer = "container:../../../../Dropbox/Xcode Projects/CollectionUtils/Project/CollectionUtils.xcodeproj">
+            ReferencedContainer = "container:CollectionUtils.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
