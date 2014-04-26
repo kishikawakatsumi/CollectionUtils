@@ -1,15 +1,15 @@
-DESTINATIONS = ["name=iPhone,OS=6.1",
+DESTINATIONS = [
                 "name=iPhone Retina (3.5-inch),OS=6.1",
                 "name=iPhone Retina (3.5-inch),OS=7.0",
-                "name=iPhone Retina (4-inch),OS=6.1",
                 "name=iPhone Retina (4-inch),OS=7.0",
-                "name=iPhone Retina (4-inch 64-bit),OS=7.0"]
+                "name=iPhone Retina (4-inch 64-bit),OS=7.0"
+               ]
 
 task :default => [:build, :clean, :test]
 
 desc "build"
 task :build, :workspace, :schemes do |t, args|
-  schemes = args[:schemes].gsub(/'/, '').split(' ')
+  schemes = args[:schemes].gsub(/'/, "").split(" ")
   schemes.each do |scheme|
     options = {
       workspace: "#{args[:workspace]}",
@@ -45,7 +45,7 @@ end
 
 desc "run unit tests"
 task :test, :workspace, :schemes do |t, args|
-  schemes = args[:schemes].gsub(/'/, '').split(' ')
+  schemes = args[:schemes].gsub(/'/, "").split(" ")
   schemes.each do |scheme|
     DESTINATIONS.each do |destination|
       options = {
