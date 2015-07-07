@@ -1,67 +1,32 @@
-DESTINATIONS = [
-                "name=iPhone Retina (3.5-inch),OS=6.1",
-                "name=iPhone Retina (3.5-inch),OS=7.0",
-                "name=iPhone Retina (4-inch),OS=7.0",
-                "name=iPhone Retina (4-inch 64-bit),OS=7.0"
-               ]
+require 'xcjobs'
 
-task :default => [:build, :clean, :test]
-
-desc "build"
-task :build, :workspace, :schemes do |t, args|
-  schemes = args[:schemes].gsub(/'/, "").split(" ")
-  schemes.each do |scheme|
-    options = {
-      workspace: "#{args[:workspace]}",
-      scheme: "#{scheme}"
-    }
-    options = join_option(options: options, prefix: "-", seperator: " ")
-    settings = {
-      CODE_SIGN_IDENTITY: "",
-      CODE_SIGNING_REQUIRED: "NO"
-    }
-    settings = join_option(options: settings, prefix: "", seperator: "=")
-    sh "xcodebuild #{options} #{settings} build | xcpretty -c; exit ${PIPESTATUS[0]}"
-  end
+def destinations
+  [ 'name=iPhone 4s,OS=8.3', 'name=iPhone 5s,OS=8.3', 'name=iPhone 6,OS=8.3' ]
 end
 
-desc "clean"
-task :clean, :workspace, :schemes do |t, args|
-  schemes = args[:schemes].gsub(/'/, '').split(' ')
-  schemes.each do |scheme|
-    options = {
-      workspace: "#{args[:workspace]}",
-      scheme: "#{scheme}"
-    }
-    options = join_option(options: options, prefix: "-", seperator: " ")
-    settings = {
-      CODE_SIGN_IDENTITY: "",
-      CODE_SIGNING_REQUIRED: "NO"
-    }
-    settings = join_option(options: settings, prefix: "", seperator: "=")
-    sh "xcodebuild #{options} #{settings} clean | xcpretty -c; exit ${PIPESTATUS[0]}"
-  end
+XCJobs::Build.new do |t|
+  t.workspace = 'CollectionUtils'
+  t.scheme = 'CollectionUtils'
+  t.configuration = 'Release'
+  t.build_dir = 'build'
+  t.formatter = 'xcpretty -c'
+  t.add_build_setting('CODE_SIGN_IDENTITY', '')
+  t.add_build_setting('CODE_SIGNING_REQUIRED', 'NO')
+  t.add_build_setting('GCC_SYMBOLS_PRIVATE_EXTERN', 'NO')
 end
 
-desc "run unit tests"
-task :test, :workspace, :schemes do |t, args|
-  schemes = args[:schemes].gsub(/'/, "").split(" ")
-  schemes.each do |scheme|
-    DESTINATIONS.each do |destination|
-      options = {
-        workspace: "#{args[:workspace]}",
-        scheme: "#{scheme}",
-        configuration: "Debug",
-        sdk: "iphonesimulator",
-        destination: "#{destination}"
-      }
-      options = join_option(options: options, prefix: "-", seperator: " ")
-      sh "xcodebuild test #{options} | xcpretty -tc; exit ${PIPESTATUS[0]}"
-    end
+XCJobs::Test.new do |t|
+  t.workspace = 'CollectionUtils'
+  t.scheme = 'libCollectionUtils'
+  t.configuration = 'Release'
+  t.build_dir = 'build'
+  destinations.each do |destination|
+    t.add_destination(destination)
   end
+  t.coverage = true
+  t.formatter = 'xcpretty -c'
 end
 
-def join_option(options: {}, prefix: "", seperator: "")
-  _options = options.map { |k, v| %(#{prefix}#{k}#{seperator}"#{v}") }
-  _options = _options.join(" ")
+XCJobs::Coverage::Coveralls.new() do |t|
+  t.add_extension('.m')
 end

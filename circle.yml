@@ -1,0 +1,11 @@
+machine:
+  xcode:
+    version: 6.3.1
+dependencies:
+  override:
+    - bundle install --path=vendor/bundle --binstubs=vendor/bin
+  cache_directories:
+    - vendor/bundle
+test:
+  override:
+    - bundle exec rake build test coverage:coveralls
