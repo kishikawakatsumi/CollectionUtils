@@ -22,10 +22,42 @@
 		144872F51B4C0FC400C8234C /* CUCompactJSONSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872EF1B4C0FC400C8234C /* CUCompactJSONSerializationTests.m */; };
 		144872F61B4C0FC400C8234C /* CUCompactMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872F01B4C0FC400C8234C /* CUCompactMutableArrayTests.m */; };
 		144872F71B4C0FC400C8234C /* CUCompactMutableDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872F11B4C0FC400C8234C /* CUCompactMutableDictionaryTests.m */; };
+		144873141B4C1F6E00C8234C /* CollectionUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1448730A1B4C1F6E00C8234C /* CollectionUtils.framework */; };
+		144873211B4C1FA100C8234C /* CollectionUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 144872D91B4C0FA200C8234C /* CollectionUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		144873221B4C1FAA00C8234C /* Compact.h in Headers */ = {isa = PBXBuildFile; fileRef = 144872DB1B4C0FAF00C8234C /* Compact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		144873231B4C1FAA00C8234C /* CUCompactArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 144872DD1B4C0FAF00C8234C /* CUCompactArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		144873241B4C1FAA00C8234C /* CUCompactDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 144872DF1B4C0FAF00C8234C /* CUCompactDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		144873251B4C1FAA00C8234C /* CUJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 144872E11B4C0FAF00C8234C /* CUJSONSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		144873261B4C1FB500C8234C /* Compact.h in Headers */ = {isa = PBXBuildFile; fileRef = 144872DB1B4C0FAF00C8234C /* Compact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		144873271B4C1FB500C8234C /* CUCompactArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 144872DD1B4C0FAF00C8234C /* CUCompactArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		144873281B4C1FB500C8234C /* CUCompactDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 144872DF1B4C0FAF00C8234C /* CUCompactDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		144873291B4C1FB500C8234C /* CUJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 144872E11B4C0FAF00C8234C /* CUJSONSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1448732A1B4C204E00C8234C /* CollectionUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872EC1B4C0FC400C8234C /* CollectionUtilsTests.m */; };
+		1448732B1B4C204E00C8234C /* CUCompactArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872ED1B4C0FC400C8234C /* CUCompactArrayTests.m */; };
+		1448732C1B4C204E00C8234C /* CUCompactDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872EE1B4C0FC400C8234C /* CUCompactDictionaryTests.m */; };
+		1448732D1B4C204E00C8234C /* CUCompactJSONSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872EF1B4C0FC400C8234C /* CUCompactJSONSerializationTests.m */; };
+		1448732E1B4C204E00C8234C /* CUCompactMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872F01B4C0FC400C8234C /* CUCompactMutableArrayTests.m */; };
+		1448732F1B4C204E00C8234C /* CUCompactMutableDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872F11B4C0FC400C8234C /* CUCompactMutableDictionaryTests.m */; };
+		144873301B4C207900C8234C /* CollectionUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 144872D91B4C0FA200C8234C /* CollectionUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		144873311B4C211600C8234C /* Compact.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872DC1B4C0FAF00C8234C /* Compact.m */; };
+		144873321B4C211600C8234C /* CUCompactArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872DE1B4C0FAF00C8234C /* CUCompactArray.m */; };
+		144873331B4C211600C8234C /* CUCompactDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872E01B4C0FAF00C8234C /* CUCompactDictionary.m */; };
+		144873341B4C211600C8234C /* CUJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872E21B4C0FAF00C8234C /* CUJSONSerialization.m */; };
+		144873351B4C211900C8234C /* Compact.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872DC1B4C0FAF00C8234C /* Compact.m */; };
+		144873361B4C211900C8234C /* CUCompactArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872DE1B4C0FAF00C8234C /* CUCompactArray.m */; };
+		144873371B4C211900C8234C /* CUCompactDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872E01B4C0FAF00C8234C /* CUCompactDictionary.m */; };
+		144873381B4C211900C8234C /* CUJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872E21B4C0FAF00C8234C /* CUJSONSerialization.m */; };
 		14C8BC291B4C0F5800231EBD /* CollectionUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C8BC1D1B4C0F5800231EBD /* CollectionUtils.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		144873151B4C1F6E00C8234C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14C8BC141B4C0F5800231EBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 144873091B4C1F6E00C8234C;
+			remoteInfo = "CollectionUtils-Mac";
+		};
 		14C8BC2A1B4C0F5800231EBD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14C8BC141B4C0F5800231EBD /* Project object */;
@@ -51,6 +83,9 @@
 		144872EF1B4C0FC400C8234C /* CUCompactJSONSerializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CUCompactJSONSerializationTests.m; path = ../../Tests/CUCompactJSONSerializationTests.m; sourceTree = "<group>"; };
 		144872F01B4C0FC400C8234C /* CUCompactMutableArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CUCompactMutableArrayTests.m; path = ../../Tests/CUCompactMutableArrayTests.m; sourceTree = "<group>"; };
 		144872F11B4C0FC400C8234C /* CUCompactMutableDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CUCompactMutableDictionaryTests.m; path = ../../Tests/CUCompactMutableDictionaryTests.m; sourceTree = "<group>"; };
+		144872FD1B4C1F5F00C8234C /* CollectionUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollectionUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1448730A1B4C1F6E00C8234C /* CollectionUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollectionUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		144873131B4C1F6E00C8234C /* CollectionUtils-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CollectionUtils-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C8BC1D1B4C0F5800231EBD /* CollectionUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollectionUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C8BC211B4C0F5800231EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C8BC281B4C0F5800231EBD /* CollectionUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +93,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		144872F91B4C1F5F00C8234C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144873061B4C1F6E00C8234C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144873101B4C1F6E00C8234C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144873141B4C1F6E00C8234C /* CollectionUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		14C8BC191B4C0F5800231EBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,6 +162,9 @@
 			children = (
 				14C8BC1D1B4C0F5800231EBD /* CollectionUtils.framework */,
 				14C8BC281B4C0F5800231EBD /* CollectionUtilsTests.xctest */,
+				144872FD1B4C1F5F00C8234C /* CollectionUtils.framework */,
+				1448730A1B4C1F6E00C8234C /* CollectionUtils.framework */,
+				144873131B4C1F6E00C8234C /* CollectionUtils-MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +212,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		144872FA1B4C1F5F00C8234C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144873211B4C1FA100C8234C /* CollectionUtils.h in Headers */,
+				144873221B4C1FAA00C8234C /* Compact.h in Headers */,
+				144873231B4C1FAA00C8234C /* CUCompactArray.h in Headers */,
+				144873241B4C1FAA00C8234C /* CUCompactDictionary.h in Headers */,
+				144873251B4C1FAA00C8234C /* CUJSONSerialization.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144873071B4C1F6E00C8234C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144873301B4C207900C8234C /* CollectionUtils.h in Headers */,
+				144873261B4C1FB500C8234C /* Compact.h in Headers */,
+				144873271B4C1FB500C8234C /* CUCompactArray.h in Headers */,
+				144873281B4C1FB500C8234C /* CUCompactDictionary.h in Headers */,
+				144873291B4C1FB500C8234C /* CUJSONSerialization.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		14C8BC1A1B4C0F5800231EBD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,9 +251,63 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14C8BC1C1B4C0F5800231EBD /* CollectionUtils */ = {
+		144872FC1B4C1F5F00C8234C /* CollectionUtils-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14C8BC331B4C0F5800231EBD /* Build configuration list for PBXNativeTarget "CollectionUtils" */;
+			buildConfigurationList = 144873041B4C1F5F00C8234C /* Build configuration list for PBXNativeTarget "CollectionUtils-watchOS" */;
+			buildPhases = (
+				144872F81B4C1F5F00C8234C /* Sources */,
+				144872F91B4C1F5F00C8234C /* Frameworks */,
+				144872FA1B4C1F5F00C8234C /* Headers */,
+				144872FB1B4C1F5F00C8234C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CollectionUtils-watchOS";
+			productName = "CollectionUtils-watchOS";
+			productReference = 144872FD1B4C1F5F00C8234C /* CollectionUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		144873091B4C1F6E00C8234C /* CollectionUtils-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1448731B1B4C1F6E00C8234C /* Build configuration list for PBXNativeTarget "CollectionUtils-Mac" */;
+			buildPhases = (
+				144873051B4C1F6E00C8234C /* Sources */,
+				144873061B4C1F6E00C8234C /* Frameworks */,
+				144873071B4C1F6E00C8234C /* Headers */,
+				144873081B4C1F6E00C8234C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CollectionUtils-Mac";
+			productName = "CollectionUtils-Mac";
+			productReference = 1448730A1B4C1F6E00C8234C /* CollectionUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		144873121B4C1F6E00C8234C /* CollectionUtils-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1448731E1B4C1F6E00C8234C /* Build configuration list for PBXNativeTarget "CollectionUtils-MacTests" */;
+			buildPhases = (
+				1448730F1B4C1F6E00C8234C /* Sources */,
+				144873101B4C1F6E00C8234C /* Frameworks */,
+				144873111B4C1F6E00C8234C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				144873161B4C1F6E00C8234C /* PBXTargetDependency */,
+			);
+			name = "CollectionUtils-MacTests";
+			productName = "CollectionUtils-MacTests";
+			productReference = 144873131B4C1F6E00C8234C /* CollectionUtils-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14C8BC1C1B4C0F5800231EBD /* CollectionUtils-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C8BC331B4C0F5800231EBD /* Build configuration list for PBXNativeTarget "CollectionUtils-iOS" */;
 			buildPhases = (
 				14C8BC181B4C0F5800231EBD /* Sources */,
 				14C8BC191B4C0F5800231EBD /* Frameworks */,
@@ -180,7 +318,7 @@
 			);
 			dependencies = (
 			);
-			name = CollectionUtils;
+			name = "CollectionUtils-iOS";
 			productName = CollectionUtils;
 			productReference = 14C8BC1D1B4C0F5800231EBD /* CollectionUtils.framework */;
 			productType = "com.apple.product-type.framework";
@@ -209,9 +347,18 @@
 		14C8BC141B4C0F5800231EBD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "kishikawa katsumi";
 				TargetAttributes = {
+					144872FC1B4C1F5F00C8234C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					144873091B4C1F6E00C8234C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					144873121B4C1F6E00C8234C = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					14C8BC1C1B4C0F5800231EBD = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -232,13 +379,37 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14C8BC1C1B4C0F5800231EBD /* CollectionUtils */,
+				14C8BC1C1B4C0F5800231EBD /* CollectionUtils-iOS */,
 				14C8BC271B4C0F5800231EBD /* CollectionUtilsTests */,
+				144872FC1B4C1F5F00C8234C /* CollectionUtils-watchOS */,
+				144873091B4C1F6E00C8234C /* CollectionUtils-Mac */,
+				144873121B4C1F6E00C8234C /* CollectionUtils-MacTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		144872FB1B4C1F5F00C8234C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144873081B4C1F6E00C8234C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144873111B4C1F6E00C8234C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		14C8BC1B1B4C0F5800231EBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +427,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		144872F81B4C1F5F00C8234C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144873311B4C211600C8234C /* Compact.m in Sources */,
+				144873321B4C211600C8234C /* CUCompactArray.m in Sources */,
+				144873331B4C211600C8234C /* CUCompactDictionary.m in Sources */,
+				144873341B4C211600C8234C /* CUJSONSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144873051B4C1F6E00C8234C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144873351B4C211900C8234C /* Compact.m in Sources */,
+				144873361B4C211900C8234C /* CUCompactArray.m in Sources */,
+				144873371B4C211900C8234C /* CUCompactDictionary.m in Sources */,
+				144873381B4C211900C8234C /* CUJSONSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1448730F1B4C1F6E00C8234C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1448732A1B4C204E00C8234C /* CollectionUtilsTests.m in Sources */,
+				1448732B1B4C204E00C8234C /* CUCompactArrayTests.m in Sources */,
+				1448732C1B4C204E00C8234C /* CUCompactDictionaryTests.m in Sources */,
+				1448732D1B4C204E00C8234C /* CUCompactJSONSerializationTests.m in Sources */,
+				1448732E1B4C204E00C8234C /* CUCompactMutableArrayTests.m in Sources */,
+				1448732F1B4C204E00C8234C /* CUCompactMutableDictionaryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		14C8BC181B4C0F5800231EBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,14 +489,129 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		144873161B4C1F6E00C8234C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 144873091B4C1F6E00C8234C /* CollectionUtils-Mac */;
+			targetProxy = 144873151B4C1F6E00C8234C /* PBXContainerItemProxy */;
+		};
 		14C8BC2B1B4C0F5800231EBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14C8BC1C1B4C0F5800231EBD /* CollectionUtils */;
+			target = 14C8BC1C1B4C0F5800231EBD /* CollectionUtils-iOS */;
 			targetProxy = 14C8BC2A1B4C0F5800231EBD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		144873021B4C1F5F00C8234C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = CollectionUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kishikawakatsumi.CollectionUtils-watchOS";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		144873031B4C1F5F00C8234C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CollectionUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kishikawakatsumi.CollectionUtils-watchOS";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		1448731C1B4C1F6E00C8234C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CollectionUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kishikawakatsumi.CollectionUtils-Mac";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1448731D1B4C1F6E00C8234C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CollectionUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kishikawakatsumi.CollectionUtils-Mac";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1448731F1B4C1F6E00C8234C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = CollectionUtils/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kishikawakatsumi.CollectionUtils-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		144873201B4C1F6E00C8234C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CollectionUtils/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kishikawakatsumi.CollectionUtils-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		14C8BC311B4C0F5800231EBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -313,6 +634,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -389,7 +711,8 @@
 				INFOPLIST_FILE = CollectionUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kishikawakatsumi.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -404,7 +727,8 @@
 				INFOPLIST_FILE = CollectionUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kishikawakatsumi.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -422,6 +746,7 @@
 				);
 				INFOPLIST_FILE = CollectionUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kishikawakatsumi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,6 +760,7 @@
 				);
 				INFOPLIST_FILE = CollectionUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kishikawakatsumi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -442,6 +768,30 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		144873041B4C1F5F00C8234C /* Build configuration list for PBXNativeTarget "CollectionUtils-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144873021B4C1F5F00C8234C /* Debug */,
+				144873031B4C1F5F00C8234C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1448731B1B4C1F6E00C8234C /* Build configuration list for PBXNativeTarget "CollectionUtils-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1448731C1B4C1F6E00C8234C /* Debug */,
+				1448731D1B4C1F6E00C8234C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1448731E1B4C1F6E00C8234C /* Build configuration list for PBXNativeTarget "CollectionUtils-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1448731F1B4C1F6E00C8234C /* Debug */,
+				144873201B4C1F6E00C8234C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		14C8BC171B4C0F5800231EBD /* Build configuration list for PBXProject "CollectionUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -451,7 +801,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14C8BC331B4C0F5800231EBD /* Build configuration list for PBXNativeTarget "CollectionUtils" */ = {
+		14C8BC331B4C0F5800231EBD /* Build configuration list for PBXNativeTarget "CollectionUtils-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14C8BC341B4C0F5800231EBD /* Debug */,
