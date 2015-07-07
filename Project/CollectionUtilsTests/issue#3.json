@@ -1,0 +1,1732 @@
+{
+  "code": 1000,
+  "message": "Success",
+  "data": {
+    "overallRecommendations": [
+      "AP_BB_USG_2"
+    ],
+    "interfaceRecommendations": {
+      "Band2G": [
+        "INTF_NOI_2"
+      ],
+      "Band5G": []
+    },
+    "stationRecommendations": {
+      "Band2G": {
+        "38:AA:3C:E5:4C:C3": [
+          "STA_BAND_3"
+        ],
+        "5C:96:9D:75:68:69": [
+          "STA_BAND_3"
+        ]
+      },
+      "Band5G": {}
+    },
+    "boostGainEstimation": {
+      "Band2G": 100,
+      "Band5G": 150
+    },
+    "downloadResults": {
+      "20140909": 3899,
+      "20140910": 4238,
+      "20140911": 3970,
+      "20140912": 3178,
+      "20140915": 5209
+    },
+    "averageDownloadResults": 4098,
+    "stations": [
+      {
+        "macAddress": "C8:AA:21:90:FA:90",
+        "name": "android_564729f2bf84dc48",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1402239282000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "C0:14:3D:DB:C5:AB",
+        "name": "demian",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410527788000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 8852
+        },
+        "maxSpeed": {
+          "Band2G": 23831
+        },
+        "speed": {
+          "Band2G": {
+            "20140912": 8852
+          }
+        },
+        "dataUsage": {
+          "20140911": 0,
+          "20140912": 0
+        },
+        "dataUsageLastWeek": 0,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "D0:22:BE:13:B5:F7",
+        "name": "android-b97ea06c7d459bca",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1409754434000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 56296,
+          "Band5G": 221828
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "B8:03:05:B3:74:A5",
+        "name": "Laptop",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1403877913000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "8C:3A:E3:11:2C:CA",
+        "name": "android-80a695b85a801608",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410456201000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 24964
+        },
+        "maxSpeed": {
+          "Band2G": 55360
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 19987,
+            "20140910": 21440,
+            "20140911": 33467
+          }
+        },
+        "dataUsage": {
+          "20140909": 33,
+          "20140910": 10,
+          "20140911": 0
+        },
+        "dataUsageLastWeek": 425,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "68:94:23:F5:EB:5D",
+        "name": "daniel-chicco",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1408121308000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 108337,
+          "Band5G": 198622
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "D0:DF:9A:C4:44:93",
+        "name": null,
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1408319590000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "D0:DF:9A:2F:2F:88",
+        "name": "carlos-vera",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 28543
+        },
+        "maxSpeed": {
+          "Band2G": 55034
+        },
+        "speed": {
+          "Band2G": {
+            "20140910": 35562,
+            "20140911": 25733,
+            "20140912": 24334
+          }
+        },
+        "dataUsage": {
+          "20140910": 116,
+          "20140911": 88,
+          "20140912": 21
+        },
+        "dataUsageLastWeek": 257,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "1C:69:A5:DB:6F:D1",
+        "name": "BLACKBERRY-0114",
+        "type": "BlackBerry",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1402960009000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "A8:06:00:2F:84:33",
+        "name": "android-5de06acd7fe4543e",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1408905428000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 43614,
+          "Band5G": 98635
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "B0:5C:E5:67:82:07",
+        "name": null,
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1402338124000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "F0:CB:A1:8D:41:CA",
+        "name": "iPhonedzBenitez",
+        "type": "iPhone",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1402110457000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "60:FE:C5:A8:62:9A",
+        "name": "iPad-de-Alexis",
+        "type": "iPad",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1404151328000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "60:33:4B:1A:72:E8",
+        "name": "Mini-Mac-Roman",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410473513000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 39907
+        },
+        "maxSpeed": {
+          "Band2G": 84881,
+          "Band5G": 185366
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 38727,
+            "20140910": 34642,
+            "20140911": 46354
+          }
+        },
+        "dataUsage": {
+          "20140909": -1562,
+          "20140910": 25,
+          "20140911": 35
+        },
+        "dataUsageLastWeek": 586,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "94:D7:71:26:AC:B9",
+        "name": "android-eac9750ef75034f4",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1404076919000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "B8:78:2E:94:8D:7A",
+        "name": "Diegos-iPhone",
+        "type": "iPhone",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410363770000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 31459
+        },
+        "maxSpeed": {
+          "Band2G": 54371
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 32223,
+            "20140910": 30695
+          }
+        },
+        "dataUsage": {
+          "20140909": 1054,
+          "20140910": 56
+        },
+        "dataUsageLastWeek": 1110,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "E4:CE:8F:25:38:34",
+        "name": "Andress-MacBook-Pro",
+        "type": "MacBook",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 131295
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "A8:20:66:1E:A4:E1",
+        "name": "adm1s-MacBook-Pro-2",
+        "type": "MacBook",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "C8:60:00:20:F4:27",
+        "name": "android-831836237d760fe5",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1403638845000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "5C:96:9D:75:68:69",
+        "name": "adm1s-MacBook-Pro",
+        "type": "MacBook",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 60645
+        },
+        "maxSpeed": {
+          "Band2G": 140061,
+          "Band5G": 162161
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 52785,
+            "20140910": 69132,
+            "20140911": 45776,
+            "20140912": 56577,
+            "20140915": 78958
+          }
+        },
+        "dataUsage": {
+          "20140909": 889,
+          "20140910": 0,
+          "20140911": 47,
+          "20140912": 178,
+          "20140915": 127
+        },
+        "dataUsageLastWeek": 1192,
+        "dataUsageThisWeek": 127,
+        "boostGainEstimation": {
+          "Band2G": 20
+        },
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "B0:DF:3A:41:1B:1A",
+        "name": "android-637240dbab98f2cb",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1404230754000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 11546
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "38:AA:3C:E6:3F:67",
+        "name": "android-628232edc9657f38",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 31441,
+          "Band5G": 109770
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "88:32:9B:0F:2A:22",
+        "name": "android-f125de8e937771aa",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1402112182000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "84:8E:0C:0A:5F:80",
+        "name": "DanielCosiPhone",
+        "type": "iPhone",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 32965
+        },
+        "maxSpeed": {
+          "Band2G": 49767
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 42932,
+            "20140912": 21242,
+            "20140915": 34722
+          }
+        },
+        "dataUsage": {
+          "20140909": 0,
+          "20140910": 0,
+          "20140912": 0,
+          "20140915": 42
+        },
+        "dataUsageLastWeek": 95,
+        "dataUsageThisWeek": 42,
+        "boostGainEstimation": {
+          "Band2G": 0
+        },
+        "prioritized": true,
+        "blocked": false
+      },
+      {
+        "macAddress": "44:D8:84:4D:A9:C6",
+        "name": "iPhonedeDaniel",
+        "type": "iPhone",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 31603
+        },
+        "maxSpeed": {
+          "Band2G": 42402
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 35376,
+            "20140910": 29755,
+            "20140911": 29251,
+            "20140912": 29101,
+            "20140915": 34536
+          }
+        },
+        "dataUsage": {
+          "20140909": 745,
+          "20140910": 2,
+          "20140911": 0,
+          "20140912": 36,
+          "20140915": 378
+        },
+        "dataUsageLastWeek": 724,
+        "dataUsageThisWeek": 378,
+        "boostGainEstimation": {
+          "Band2G": 0
+        },
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "08:FD:0E:25:94:7A",
+        "name": null,
+        "type": "UNKNOWN",
+        "vendorName": null,
+        "lastConnectionDate": 1404239283000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "88:32:9B:7D:90:67",
+        "name": "android-ae345c5ea4cff244",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1403972034000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 9792
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "F0:27:65:4F:0E:8F",
+        "name": "android-88e9d910bfab0629",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1403726456000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "00:23:12:61:25:82",
+        "name": "RomanIphone",
+        "type": "iPhone",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1409926484000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 21084
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "68:94:23:F3:BD:7F",
+        "name": "angel-bustamante",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410536064000,
+        "connectedInterface": null,
+        "averageSpeed": {},
+        "maxSpeed": {
+          "Band2G": 51756
+        },
+        "speed": {},
+        "dataUsage": {
+          "20140912": 0
+        },
+        "dataUsageLastWeek": 0,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "F8:1E:DF:F3:35:31",
+        "name": "MacBook-Pro",
+        "type": "MacBook",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band5G": 182424
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "34:BB:26:DB:5C:C0",
+        "name": "android-24ee56a623df055a",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1409759172000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 59908
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "14:10:9F:D2:94:85",
+        "name": "adm1s-MacBook-Pro-2",
+        "type": "MacBook",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410816127000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 93140,
+          "Band5G": 227093
+        },
+        "maxSpeed": {
+          "Band2G": 95540,
+          "Band5G": 236825
+        },
+        "speed": {
+          "Band2G": {
+            "20140915": 93140
+          },
+          "Band5G": {
+            "20140912": 227093
+          }
+        },
+        "dataUsage": {
+          "20140912": 158,
+          "20140915": 32
+        },
+        "dataUsageLastWeek": 158,
+        "dataUsageThisWeek": 32,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "58:B0:35:83:55:20",
+        "name": "MacRoman",
+        "type": "MacBook",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 36084
+        },
+        "maxSpeed": {
+          "Band2G": 69743
+        },
+        "speed": {
+          "Band2G": {
+            "20140912": 36084
+          }
+        },
+        "dataUsage": {
+          "20140912": 192
+        },
+        "dataUsageLastWeek": 192,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "78:E4:00:76:81:D1",
+        "name": "explorer-906e53",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1403901319000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 1786
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "B8:88:E3:39:37:E1",
+        "name": "demian",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "B8:78:2E:95:40:D9",
+        "name": "Darius",
+        "type": "iPhone",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band5G",
+        "averageSpeed": {
+          "Band2G": 33053,
+          "Band5G": 117692
+        },
+        "maxSpeed": {
+          "Band2G": 50955,
+          "Band5G": 129759
+        },
+        "speed": {
+          "Band2G": {
+            "20140910": 33859,
+            "20140915": 32247
+          },
+          "Band5G": {
+            "20140912": 126142,
+            "20140915": 109242
+          }
+        },
+        "dataUsage": {
+          "20140909": 0,
+          "20140910": 0,
+          "20140912": 54,
+          "20140915": 302
+        },
+        "dataUsageLastWeek": 54,
+        "dataUsageThisWeek": 302,
+        "boostGainEstimation": {
+          "Band5G": 0
+        },
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "D0:22:BE:42:72:62",
+        "name": "android-e8707c0a2cb60961",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410371418000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 36016
+        },
+        "maxSpeed": {
+          "Band2G": 56382,
+          "Band5G": 228767
+        },
+        "speed": {
+          "Band2G": {
+            "20140910": 36016
+          }
+        },
+        "dataUsage": {
+          "20140910": 0
+        },
+        "dataUsageLastWeek": 2,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "E8:39:DF:5A:08:35",
+        "name": "Seba-PC",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1403192993000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 55083
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "50:2D:1D:8A:93:14",
+        "name": null,
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {},
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": 0,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "00:1F:3C:08:26:50",
+        "name": null,
+        "type": "UNKNOWN",
+        "vendorName": null,
+        "lastConnectionDate": 1410020763000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "70:05:14:67:F0:98",
+        "name": null,
+        "type": "UNKNOWN",
+        "vendorName": null,
+        "lastConnectionDate": 1404149758000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "E8:39:DF:5A:07:C1",
+        "name": "adrian-lezcano",
+        "type": "PC",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 38909
+        },
+        "maxSpeed": {
+          "Band2G": 56569
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 38915,
+            "20140910": 41414,
+            "20140911": 36398
+          }
+        },
+        "dataUsage": {
+          "20140909": 350,
+          "20140910": 139,
+          "20140911": 3
+        },
+        "dataUsageLastWeek": 74,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "40:F3:08:63:DB:87",
+        "name": "android-d542b036894f90c6",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1402495454000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "00:1F:3C:7C:CE:56",
+        "name": "dodasso",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1407274379000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 8519
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "2C:D0:5A:01:03:E4",
+        "name": "bruno-podesta",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 49553
+        },
+        "maxSpeed": {
+          "Band2G": 95299,
+          "Band5G": 199520
+        },
+        "speed": {
+          "Band2G": {
+            "20140912": 49553
+          }
+        },
+        "dataUsage": {
+          "20140909": 0,
+          "20140910": 0,
+          "20140911": 0,
+          "20140912": 8
+        },
+        "dataUsageLastWeek": 8,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "38:AA:3C:E5:4C:C3",
+        "name": "android-e32b8c321922c895",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 29692
+        },
+        "maxSpeed": {
+          "Band2G": 45251
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 30475,
+            "20140910": 30598,
+            "20140911": 24321,
+            "20140912": 27291,
+            "20140915": 35778
+          }
+        },
+        "dataUsage": {
+          "20140909": 17,
+          "20140910": 10,
+          "20140911": 0,
+          "20140912": 0,
+          "20140915": 338
+        },
+        "dataUsageLastWeek": 86,
+        "dataUsageThisWeek": 338,
+        "boostGainEstimation": {
+          "Band2G": 0
+        },
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "A8:06:00:2F:7F:A7",
+        "name": "android-f816e8a208cb20c1",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410357838000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 28264
+        },
+        "maxSpeed": {
+          "Band2G": 39689
+        },
+        "speed": {
+          "Band2G": {
+            "20140910": 28264
+          }
+        },
+        "dataUsage": {
+          "20140910": 0
+        },
+        "dataUsageLastWeek": 0,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "18:E7:F4:E5:44:79",
+        "name": "iPhone-de-Rauly",
+        "type": "iPhone",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 22827
+        },
+        "maxSpeed": {
+          "Band2G": 40426
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 24230,
+            "20140911": 24198,
+            "20140912": 20837,
+            "20140915": 22044
+          }
+        },
+        "dataUsage": {
+          "20140909": 57,
+          "20140911": 0,
+          "20140912": 32,
+          "20140915": 258
+        },
+        "dataUsageLastWeek": -969,
+        "dataUsageThisWeek": 258,
+        "boostGainEstimation": {
+          "Band2G": 20
+        },
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "C8:AA:21:FA:B0:6B",
+        "name": "android-bfa99fef0c475d6",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 32493
+        },
+        "maxSpeed": {
+          "Band2G": 40833
+        },
+        "speed": {
+          "Band2G": {
+            "20140915": 32493
+          }
+        },
+        "dataUsage": {
+          "20140915": 413
+        },
+        "dataUsageLastWeek": 0,
+        "dataUsageThisWeek": 413,
+        "boostGainEstimation": {
+          "Band2G": 100
+        },
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "C8:AA:21:CB:F4:15",
+        "name": "android_836cdb6cf6f20094",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410355010000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 20264
+        },
+        "maxSpeed": {
+          "Band2G": 28209
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 14680,
+            "20140910": 25849
+          }
+        },
+        "dataUsage": {
+          "20140909": 0,
+          "20140910": 0
+        },
+        "dataUsageLastWeek": -896,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "B0:79:94:DD:8C:03",
+        "name": "android-af02d6e2d64cb493",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410801756000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 27480
+        },
+        "maxSpeed": {
+          "Band2G": 37912,
+          "Band5G": 53537
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 31208,
+            "20140910": 25905,
+            "20140912": 25328
+          }
+        },
+        "dataUsage": {
+          "20140909": 778,
+          "20140910": 10,
+          "20140911": 0,
+          "20140912": 17,
+          "20140915": 3
+        },
+        "dataUsageLastWeek": 1048,
+        "dataUsageThisWeek": 3,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "5C:F9:38:E5:91:E9",
+        "name": "iPhone-de-Rauly",
+        "type": "iPhone",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410816436000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 30715,
+          "Band5G": 113828
+        },
+        "maxSpeed": {
+          "Band2G": 47685,
+          "Band5G": 129414
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 29915,
+            "20140910": 31515
+          },
+          "Band5G": {
+            "20140909": 113431,
+            "20140915": 114226
+          }
+        },
+        "dataUsage": {
+          "20140909": 0,
+          "20140910": 0,
+          "20140915": 1323
+        },
+        "dataUsageLastWeek": 355,
+        "dataUsageThisWeek": 1323,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "C8:AA:21:8F:C8:09",
+        "name": "android_75cb4d06f34b4ba5",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410811550000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 15007
+        },
+        "maxSpeed": {
+          "Band2G": 23146
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 12458,
+            "20140910": 18386,
+            "20140911": 14178
+          }
+        },
+        "dataUsage": {
+          "20140909": 20,
+          "20140910": 0,
+          "20140911": 0,
+          "20140915": 0
+        },
+        "dataUsageLastWeek": 34,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "DC:9F:A4:8D:F0:7D",
+        "name": null,
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410811865000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 26796
+        },
+        "maxSpeed": {
+          "Band2G": 32479
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 28017,
+            "20140915": 25575
+          }
+        },
+        "dataUsage": {
+          "20140909": 0,
+          "20140912": 0,
+          "20140915": 0
+        },
+        "dataUsageLastWeek": 0,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "00:24:54:9B:66:8C",
+        "name": "Schapira-PC",
+        "type": "PC",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "20:C9:D0:91:8A:8D",
+        "name": "Damians-Mac-mini",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410886499000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 84105
+        },
+        "maxSpeed": {
+          "Band2G": 117636,
+          "Band5G": 227811
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 84105
+          }
+        },
+        "dataUsage": {
+          "20140909": 177,
+          "20140911": 51,
+          "20140912": 5
+        },
+        "dataUsageLastWeek": 600,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {
+          "Band2G": 0
+        },
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "2C:CC:15:76:B1:8C",
+        "name": null,
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1403804464000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "E0:2A:82:1A:A9:67",
+        "name": "nb88991929",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1403625410000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "C8:6F:1D:0F:DC:5E",
+        "name": "Bambach-i5",
+        "type": "iPhone",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 31415
+        },
+        "maxSpeed": {
+          "Band2G": 48319,
+          "Band5G": 107489
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 32599,
+            "20140912": 28553,
+            "20140915": 33095
+          }
+        },
+        "dataUsage": {
+          "20140909": 71,
+          "20140911": 0,
+          "20140912": 33,
+          "20140915": 36
+        },
+        "dataUsageLastWeek": -1685,
+        "dataUsageThisWeek": 36,
+        "boostGainEstimation": {
+          "Band2G": 0
+        },
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "10:9A:DD:BE:FE:06",
+        "name": "Mac-mini-de-adm1",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": "Band2G",
+        "averageSpeed": {
+          "Band2G": 75146
+        },
+        "maxSpeed": {
+          "Band2G": 75146
+        },
+        "speed": {
+          "Band2G": {
+            "20140911": 75146
+          }
+        },
+        "dataUsage": {
+          "20140911": 0
+        },
+        "dataUsageLastWeek": 0,
+        "dataUsageThisWeek": 0,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "F8:A9:D0:45:92:68",
+        "name": "android-9e0e1cbecd4c99ea",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1404136804000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band5G": 215481
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "A8:06:00:2F:8F:F5",
+        "name": "android-516fb8da0e454f52",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1407440767000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {
+          "Band2G": 41733,
+          "Band5G": 101738
+        },
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "60:BE:B5:CB:FD:4E",
+        "name": "android-e443680182778d36",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410806806000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 18372
+        },
+        "maxSpeed": {
+          "Band2G": 35633
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 20891,
+            "20140915": 15854
+          }
+        },
+        "dataUsage": {
+          "20140909": 22,
+          "20140910": 0,
+          "20140911": 0,
+          "20140912": 4,
+          "20140915": 23
+        },
+        "dataUsageLastWeek": 44,
+        "dataUsageThisWeek": 23,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "00:87:31:4A:20:F2",
+        "name": "Laptop",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": null,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "90:A4:DE:8F:E7:F1",
+        "name": "silvina",
+        "type": "UNKNOWN",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1410812646000,
+        "connectedInterface": null,
+        "averageSpeed": {
+          "Band2G": 24715
+        },
+        "maxSpeed": {
+          "Band2G": 49030
+        },
+        "speed": {
+          "Band2G": {
+            "20140909": 19566,
+            "20140911": 21718,
+            "20140915": 32862
+          }
+        },
+        "dataUsage": {
+          "20140909": 20,
+          "20140910": 0,
+          "20140911": 0,
+          "20140915": 46
+        },
+        "dataUsageLastWeek": 372,
+        "dataUsageThisWeek": 46,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      },
+      {
+        "macAddress": "A8:06:00:2F:94:13",
+        "name": "android-22b6e176f90cc2b4",
+        "type": "Android",
+        "vendorName": "UNKNOWN",
+        "lastConnectionDate": 1402946813000,
+        "connectedInterface": null,
+        "averageSpeed": null,
+        "maxSpeed": {},
+        "speed": {},
+        "dataUsage": {},
+        "dataUsageLastWeek": null,
+        "dataUsageThisWeek": null,
+        "boostGainEstimation": {},
+        "prioritized": false,
+        "blocked": false
+      }
+    ],
+    "speed": {
+      "Band2G": {
+        "20140912": 20622.267578125,
+        "20140915": 33811.78515625
+      },
+      "Band5G": {
+        "20140912": 176415.703125,
+        "20140915": 116219.8984375
+      }
+    },
+    "interfaceSsidMapping": {
+      "Band2G": "cloudcheck_4",
+      "Band5G": "cloudcheck_4_5g"
+    },
+    "overallRecommendationSummary": {
+      "AP_SUM_BB": 100
+    },
+    "interfaceRecommendationSummary": {
+      "Band2G": {
+        "INTF_SUM_INT": 14,
+        "INTF_SUM_NOI": 71,
+        "INTF_SUM_DRI": 28
+      },
+      "Band5G": {}
+    },
+    "stationRecommendationSummary": {
+      "68:94:23:F3:BD:7F": {},
+      "C0:14:3D:DB:C5:AB": {},
+      "14:10:9F:D2:94:85": {
+        "STA_SUM_BAND": 14
+      },
+      "58:B0:35:83:55:20": {},
+      "B8:78:2E:95:40:D9": {
+        "STA_SUM_BAND": 28
+      },
+      "D0:22:BE:42:72:62": {
+        "STA_SUM_BAND": 14
+      },
+      "50:2D:1D:8A:93:14": {},
+      "8C:3A:E3:11:2C:CA": {},
+      "E8:39:DF:5A:07:C1": {},
+      "2C:D0:5A:01:03:E4": {
+        "STA_SUM_CON": 14,
+        "STA_SUM_BAND": 14
+      },
+      "38:AA:3C:E5:4C:C3": {
+        "STA_SUM_BAND": 71
+      },
+      "D0:DF:9A:2F:2F:88": {},
+      "A8:06:00:2F:7F:A7": {},
+      "18:E7:F4:E5:44:79": {},
+      "C8:AA:21:FA:B0:6B": {},
+      "C8:AA:21:CB:F4:15": {},
+      "B0:79:94:DD:8C:03": {
+        "STA_SUM_CON": 28,
+        "STA_SUM_BAND": 57
+      },
+      "5C:F9:38:E5:91:E9": {
+        "STA_SUM_BAND": 28
+      },
+      "60:33:4B:1A:72:E8": {
+        "STA_SUM_BAND": 42
+      },
+      "DC:9F:A4:8D:F0:7D": {},
+      "C8:AA:21:8F:C8:09": {
+        "STA_SUM_CON": 14
+      },
+      "B8:78:2E:94:8D:7A": {},
+      "20:C9:D0:91:8A:8D": {
+        "STA_SUM_BAND": 14
+      },
+      "5C:96:9D:75:68:69": {
+        "STA_SUM_BAND": 71
+      },
+      "C8:6F:1D:0F:DC:5E": {
+        "STA_SUM_BAND": 42
+      },
+      "10:9A:DD:BE:FE:06": {},
+      "84:8E:0C:0A:5F:80": {
+        "STA_SUM_CON": 14
+      },
+      "44:D8:84:4D:A9:C6": {},
+      "60:BE:B5:CB:FD:4E": {},
+      "90:A4:DE:8F:E7:F1": {}
+    },
+    "aggregatedSeverity": "WARN",
+    "aggregatedInterfacesSeverity": {
+      "Band2G": "WARN",
+      "Band5G": null
+    },
+    "aggregatedStationsSeverity": {
+      "38:AA:3C:E5:4C:C3": "ACTION",
+      "5C:96:9D:75:68:69": "ACTION"
+    }
+  }
+}

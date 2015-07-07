@@ -47,6 +47,7 @@
 		144873361B4C211900C8234C /* CUCompactArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872DE1B4C0FAF00C8234C /* CUCompactArray.m */; };
 		144873371B4C211900C8234C /* CUCompactDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872E01B4C0FAF00C8234C /* CUCompactDictionary.m */; };
 		144873381B4C211900C8234C /* CUJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872E21B4C0FAF00C8234C /* CUJSONSerialization.m */; };
+		147001331B4C49F6009C02C0 /* issue#3.json in Resources */ = {isa = PBXBuildFile; fileRef = 147001321B4C49F6009C02C0 /* issue#3.json */; };
 		14C8BC291B4C0F5800231EBD /* CollectionUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C8BC1D1B4C0F5800231EBD /* CollectionUtils.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		144872FD1B4C1F5F00C8234C /* CollectionUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollectionUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1448730A1B4C1F6E00C8234C /* CollectionUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollectionUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		144873131B4C1F6E00C8234C /* CollectionUtils-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CollectionUtils-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		147001321B4C49F6009C02C0 /* issue#3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "issue#3.json"; sourceTree = "<group>"; };
 		14C8BC1D1B4C0F5800231EBD /* CollectionUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollectionUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C8BC211B4C0F5800231EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C8BC281B4C0F5800231EBD /* CollectionUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +198,7 @@
 				144872EF1B4C0FC400C8234C /* CUCompactJSONSerializationTests.m */,
 				144872F01B4C0FC400C8234C /* CUCompactMutableArrayTests.m */,
 				144872F11B4C0FC400C8234C /* CUCompactMutableDictionaryTests.m */,
+				147001321B4C49F6009C02C0 /* issue#3.json */,
 				14C8BC2D1B4C0F5800231EBD /* Supporting Files */,
 			);
 			path = CollectionUtilsTests;
@@ -421,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147001331B4C49F6009C02C0 /* issue#3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,6 +779,7 @@
 				144873031B4C1F5F00C8234C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1448731B1B4C1F6E00C8234C /* Build configuration list for PBXNativeTarget "CollectionUtils-Mac" */ = {
 			isa = XCConfigurationList;
@@ -783,6 +788,7 @@
 				1448731D1B4C1F6E00C8234C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1448731E1B4C1F6E00C8234C /* Build configuration list for PBXNativeTarget "CollectionUtils-MacTests" */ = {
 			isa = XCConfigurationList;
@@ -791,6 +797,7 @@
 				144873201B4C1F6E00C8234C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14C8BC171B4C0F5800231EBD /* Build configuration list for PBXProject "CollectionUtils" */ = {
 			isa = XCConfigurationList;

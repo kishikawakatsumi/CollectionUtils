@@ -67,4 +67,19 @@
     XCTAssertEqual([object[@"one"] count], (NSUInteger)4);
 }
 
+#pragma mark -
+
+- (void)testJSONData
+{
+    NSString *path = [[NSBundle bundleForClass:self.class] pathForResource:@"issue#3" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+
+    id object = [CUJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+
+    XCTAssertEqual([object count], (NSUInteger)3);
+    XCTAssertEqualObjects(object[@"code"], @(1000));
+    XCTAssertEqualObjects(object[@"message"], @"Success");
+    XCTAssertEqual([object[@"data"] count], (NSUInteger)15);
+}
+
 @end
