@@ -1,7 +1,7 @@
 require 'xcjobs'
 
 def destinations
-  [ 'name=iPhone 4s,OS=8.3', 'name=iPhone 5s,OS=8.3', 'name=iPhone 6,OS=8.3' ]
+  [ 'name=iPhone 4s,OS=8.1', 'name=iPhone 5s,OS=8.1', 'name=iPhone 6,OS=8.1' ]
 end
 
 XCJobs::Build.new('build:iphonesimulator') do |t|
