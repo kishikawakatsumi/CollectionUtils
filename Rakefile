@@ -17,7 +17,7 @@ end
 
 XCJobs::Test.new do |t|
   t.workspace = 'CollectionUtils'
-  t.scheme = 'libCollectionUtils'
+  t.scheme = 'CollectionUtils'
   t.configuration = 'Release'
   t.build_dir = 'build'
   destinations.each do |destination|
