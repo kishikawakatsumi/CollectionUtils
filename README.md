@@ -1,9 +1,12 @@
-# CollectionUtils ![License MIT](https://go-shields.herokuapp.com/license-MIT-yellow.png) 
+# CollectionUtils
 
-[![Version](https://cocoapod-badges.herokuapp.com/v/CollectionUtils/badge.png)](https://cocoapod-badges.herokuapp.com/v/CollectionUtils/badge.png)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/CollectionUtils/badge.png)](https://cocoapod-badges.herokuapp.com/p/CollectionUtils/badge.png)
+[![CI Status](http://img.shields.io/travis/kishikawakatsumi/CollectionUtils.svg?style=flat)](https://travis-ci.org/kishikawakatsumi/CollectionUtils)
+[![Coverage Status](https://img.shields.io/coveralls/kishikawakatsumi/CollectionUtils.svg?style=flat)](https://coveralls.io/r/kishikawakatsumi/CollectionUtils?branch=master)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Build Status](https://travis-ci.org/kishikawakatsumi/CollectionUtils.png?branch=master)](https://travis-ci.org/kishikawakatsumi/CollectionUtils)
+[![Version](https://img.shields.io/cocoapods/v/CollectionUtils.svg?style=flat)](http://cocoadocs.org/docsets/CollectionUtils)
+[![License](https://img.shields.io/cocoapods/l/CollectionUtils.svg?style=flat)](http://cocoadocs.org/docsets/CollectionUtils)
+[![Platform](https://img.shields.io/cocoapods/p/CollectionUtils.svg?style=flat)](http://cocoadocs.org/docsets/CollectionUtils)
+
 
 Useful utilities for Objective-C collection classes. 
 
