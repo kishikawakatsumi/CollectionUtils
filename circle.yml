@@ -8,4 +8,4 @@ dependencies:
     - vendor/bundle
 test:
   override:
-    - bundle exec rake build test coverage:coveralls
+    - bundle exec rake test:ios test:osx coverage:coveralls
