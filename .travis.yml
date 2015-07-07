@@ -5,7 +5,7 @@ cache:
 install:
   - bundle install --path=vendor/bundle --binstubs=vendor/bin
 script:
-  - bundle exec rake build test coverage:coveralls
+  - bundle exec rake build test:ios test:osx coverage:coveralls
 branches:
   only:
     - master
