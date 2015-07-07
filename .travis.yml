@@ -1,12 +1,15 @@
 language: objective-c
+cache:
+  directories:
+    - vendor/bundle
+install:
+  - bundle install --path=vendor/bundle --binstubs=vendor/bin
+script:
+  - bundle exec rake build test coverage:coveralls
+branches:
+  only:
+    - master
 env:
   global:
-  - LANG=en_US.UTF-8
-  - LC_ALL=en_US.UTF-8
-before_install:
-  - gem install xcpretty
-script:
-  - rake "clean[CollectionUtils.xcworkspace, 'CollectionUtils']"
-  - rake "build[CollectionUtils.xcworkspace, 'CollectionUtils']"
-  - rake "test[CollectionUtils.xcworkspace, 'CollectionUtils']"
-   
+    - LANG=en_US.UTF-8
+    - LC_ALL=en_US.UTF-8
