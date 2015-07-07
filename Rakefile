@@ -87,5 +87,6 @@ XCJobs::Test.new('test:osx') do |t|
 end
 
 XCJobs::Coverage::Coveralls.new() do |t|
+  t.repo_token = 'FmNhcD5DH1DAEv0BK4FNSfV0rYCAEYFF8'
   t.add_extension('.m')
 end
