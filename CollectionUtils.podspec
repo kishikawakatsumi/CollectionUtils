@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "CollectionUtils"
-  s.version               = "1.0.1"
+  s.version               = "1.0.2"
   s.summary               = "Subclasses of NSArray and NSDictionary to recursively all remove NSNull values with little performance penalty."
   s.description           = <<-DESC
                               Subclasses of NSArray and NSDictionary to recursively remove all NSNull values automatically with little performance penalty.
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "4.3"
   s.osx.deployment_target = "10.6"
+  s.watchos.deployment_target = "2.0"
   
   s.requires_arc          = true
   s.source_files          = "Classes/*.{h,m}"

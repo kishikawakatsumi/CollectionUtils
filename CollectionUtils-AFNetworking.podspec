@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "CollectionUtils-AFNetworking"
-  s.version               = "1.0.1"
+  s.version               = "1.0.2"
   s.summary               = "CollectionUtils additions for AFNetworking."
   s.description           = <<-DESC
                               Subclasses of NSArray and NSDictionary to recursively remove all NSNull values automatically with little performance penalty.
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "6.0"
   s.osx.deployment_target = "10.8"
+  s.watchos.deployment_target = "2.0"
   
   s.requires_arc          = true
   s.source_files         = "Classes/Compact/AFNetworking/*.{h,m}"
