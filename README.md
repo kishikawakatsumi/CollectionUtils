@@ -1,6 +1,7 @@
 # CollectionUtils
 
 [![CI Status](http://img.shields.io/travis/kishikawakatsumi/CollectionUtils.svg?style=flat)](https://travis-ci.org/kishikawakatsumi/CollectionUtils)
+[![Circle CI](https://circleci.com/gh/kishikawakatsumi/CollectionUtils.svg?style=shield)](https://circleci.com/gh/kishikawakatsumi/CollectionUtils)
 [![Coverage Status](https://img.shields.io/coveralls/kishikawakatsumi/CollectionUtils.svg?style=flat)](https://coveralls.io/r/kishikawakatsumi/CollectionUtils?branch=master)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/CollectionUtils.svg?style=flat)](http://cocoadocs.org/docsets/CollectionUtils)
