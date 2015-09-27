@@ -48,6 +48,7 @@
 		144873371B4C211900C8234C /* CUCompactDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872E01B4C0FAF00C8234C /* CUCompactDictionary.m */; };
 		144873381B4C211900C8234C /* CUJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 144872E21B4C0FAF00C8234C /* CUJSONSerialization.m */; };
 		147001331B4C49F6009C02C0 /* issue#3.json in Resources */ = {isa = PBXBuildFile; fileRef = 147001321B4C49F6009C02C0 /* issue#3.json */; };
+		14B24C461BB7DE0300AE0ED0 /* issue#3.json in Resources */ = {isa = PBXBuildFile; fileRef = 147001321B4C49F6009C02C0 /* issue#3.json */; settings = {ASSET_TAGS = (); }; };
 		14C8BC291B4C0F5800231EBD /* CollectionUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C8BC1D1B4C0F5800231EBD /* CollectionUtils.framework */; };
 /* End PBXBuildFile section */
 
@@ -410,6 +411,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B24C461BB7DE0300AE0ED0 /* issue#3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
