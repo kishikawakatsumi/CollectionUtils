@@ -1,3 +1,7 @@
+machine:
+  xcode:
+    version: '7.0'
+    
 dependencies:
   override:
     - bundle install --path=vendor/bundle --binstubs=vendor/bin
